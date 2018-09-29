@@ -9,6 +9,13 @@ def __main__():
 
     colorama.init()
 
+    def stub():
+        print("Lets assume you're Creating a Stub for Educational Purposes only.")
+        print("To do this, Just Enter your IP Address in HOST Field in the STUB.")
+        input("")
+        __main__()
+
+
     def start_server():
         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -87,9 +94,7 @@ def __main__():
         print("[ i ] Okay Exiting. But I hope you learned something today.")
         exit(1)
     elif(main == "stub"):
-        print("[ i ] Function Coming soon..")
-        input("")
-        __main__()
+        stub()
     else:
         input("[ - ] Unidentified.")
         __main__()
