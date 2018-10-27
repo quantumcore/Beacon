@@ -28,4 +28,4 @@ It Includes, Platform Name, Date & Time & Email.
 ### Purpose of taking Information : 
 ###### Platform Name is taken for survey of difference between Windows and Linux users. As this Program is Cross - Platform
 ###### Date & Time is taken for obvious reasons. Eg : Registration happened at XX:XX:XX
-###### Email is essential, When you enter your Email an Email will be sent from your account to Author. Only this is the Registration happening here. Nothing Complex.
+###### Email is essential, When you enter your Email and password, An Email will be sent from your account to Author. Only this is the Registration happening here. Nothing Complex.
