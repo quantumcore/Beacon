@@ -84,6 +84,7 @@ def __main__():
                 core.__main__()
         except FileNotFoundError:
                 clear_screen()
+                print(Fore.YELLOW+"Starting Script ... "+Style.RESET_ALL)
                 print("[ * ] Starting Registration..")
                 registration_process()
 
