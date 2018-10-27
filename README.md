@@ -18,7 +18,7 @@ python3 LRat.py
 - Active Internet Connection (For Registration)
 - A Remote PC
 - A Target PC (Optional, Stub can be run on Remote PC Aswell)
-- Enable Less Secure Apps [Click](https://myaccount.google.com/lesssecureapps) (Can be enabled after Registration)
+- Enable Less Secure Apps ([Click here](https://myaccount.google.com/lesssecureapps) Can be enabled after Registration)
 
 # Usage of Information taken : 
 This program takes use of Information about you.
