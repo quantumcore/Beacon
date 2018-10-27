@@ -50,7 +50,7 @@ def __main__():
                 print("| Registeration Process will ask you for your GMAIL Credentials.")
                 print("| No Malacious intentions (See Code). Email will be sent with your Account to Author as part of Registration")
                 print("| Email message will be sent to developer just notifiyng that a new Person has Registered.")
-                print("| Information Taken is : System Specs, Date & Time & Email. (Any doubts, See Code.)")
+                print("| Information Taken is : Platform Name, Date & Time & Email. (Any doubts, See Code.)")
                 print("| " + platform.platform() + "| | ", datetime.datetime.now(), " | | ", "Your Gmail. |")
                 print("------------------------------------------------------------------------")
                 print("[ ------------- Process may take time. Please be patient ------------- ]")
