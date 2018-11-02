@@ -1,5 +1,5 @@
 # Date Completed - Sept - 11 - 2018
-# Date Modified : Saturday , Oct - 27 - 2018
+# Date Modified : 2 nov 2018
 # Changelogs : 
 # Added Registration feature.
 # Fixed some bugs
