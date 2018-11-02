@@ -20,6 +20,10 @@ def __main__():
     def stub():
         print("Lets assume you're Creating a Stub for Educational Purposes only.")
         print("To do this, Just Enter your IP Address in HOST Field in the STUB.")
+        print("-- ] How to USE THE STUB AKA LRAT-Client.")
+        print("- Execute LRat Client.")
+        print("- Enter IP of THIS System which is running LRat Server. (Me)")
+        print("- Press Enter.")
         input("")
         __main__()
 
@@ -36,6 +40,7 @@ def __main__():
             print("[ - ] Error Binding : ", e)
             input("")
             exit(1)
+        
 
         print("TCP : Transmission Control Protocol. IP : Internet Protocol")
         print("Listening connections. TCP allows a connection to listen for incoming connection requests.")
@@ -47,7 +52,7 @@ def __main__():
             print(Fore.RED+"[ - ] Error Listening : "+Style.RESET_ALL, etwo)
             input("")
             exit(1)
-    
+        
 
         clientsocket, addr = server.accept()
         print(Fore.LIGHTYELLOW_EX+"[ + ] Stub Connected : ", str(addr[0])+Style.RESET_ALL) 
@@ -62,11 +67,12 @@ def __main__():
                     print(Fore.LIGHTGREEN_EX+"[MESSAGE]: "+Style.RESET_ALL, data)
             except Exception as e_tree:
                 print("[ - ] Error : ", e_tree)
+            
         
         def send():
             msg = input(Fore.LIGHTGREEN_EX+"[Remote Access Session@"+Style.RESET_ALL+str(addr[0])+Fore.LIGHTGREEN_EX+"]: "+Style.RESET_ALL)
             msg = msg.encode()
-            if(msg == ""):
+            if(msg == ''):
                 pass
             elif(msg == "exit"):
                 clientsocket.close()
@@ -76,8 +82,15 @@ def __main__():
                 clientsocket.send(msg)
 
         while(True):
-            Thread(target=send()).start()
-            Thread(target=recv()).start()
+            try:
+                Thread(target=send()).start()
+                Thread(target=recv()).start()
+            except Exception as i:
+                print(Fore.RED+"[ - ] ERROR : ", i + Style.RESET_ALL)
+                input("")
+                __main__()
+            
+
 
     clear_screen() # or CLS if Windows.
     try:
@@ -90,7 +103,7 @@ def __main__():
 
     print(Fore.LIGHTMAGENTA_EX+"--]"+Style.RESET_ALL+" ========================"+Fore.LIGHTMAGENTA_EX+" [--"+Style.RESET_ALL+"\n Learn Remote Access Trojans \n"+Fore.LIGHTMAGENTA_EX+"--]"+Style.RESET_ALL+" ======================== "+Fore.LIGHTMAGENTA_EX+"[ --"+Style.RESET_ALL)
     print(Fore.LIGHTCYAN_EX+"--] "+Style.RESET_ALL+"Author : Lynx")
-    print(Fore.LIGHTCYAN_EX+"--] "+Style.RESET_ALL+"Registerd to "+ file_content)
+    print(Fore.LIGHTGREEN_EX+ file_content + Style.RESET_ALL)
     print(Fore.LIGHTCYAN_EX+"--] "+Style.RESET_ALL+"I hope you learn something..\n\n")
     print(Fore.LIGHTCYAN_EX+" --] ----------------------------------------- [-- "+Style.RESET_ALL)
     print(Fore.LIGHTCYAN_EX+"|"+Style.RESET_ALL+" LRat is a Remote Access Tool that Teaches you how"+Fore.LIGHTCYAN_EX+" |")
@@ -113,5 +126,5 @@ def __main__():
     elif(main == "stub"):
         stub()
     else:
-        input("[ - ] Unidentified.")
+        input("[ - ] Unidentified. Type, help")
         __main__()
