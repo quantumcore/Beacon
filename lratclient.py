@@ -1,6 +1,7 @@
 # A Really Basic Reverse TCP Client.
-# Update : October 29 2018
+# Update : 2 - Nov - 18
 # Added Reverse shell
+# Fixed some more bugs
 
 import socket
 import os
