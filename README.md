@@ -5,12 +5,14 @@ LRat is a really basic Python Program that will help you Learn how Remote Access
 ## Installation Instructions : 
 ### For Linux : 
 ```
+pip install colorama
 git clone https://github.com/Fahad-M/LRat
 cd LRat
 python3 LRat.py
 ```
 ### For Windows : 
 ```
+pip install colorama
 python3 LRat.py
 ```
 
