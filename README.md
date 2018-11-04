@@ -1,3 +1,5 @@
+# Project Rewritten and Renamed to Beacon. See, https://github.com/Fahad-M/Beacon
+# I declare this Project LRat Dead.
 # LRat-Python
 
 LRat is a really basic Python Program that will help you Learn how Remote Access tools Work.
