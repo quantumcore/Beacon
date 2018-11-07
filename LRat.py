@@ -62,7 +62,7 @@ def __main__():
                 ostime = datetime.datetime.now()
                 ostime = str(ostime)
 
-                msg = "Hey, My EMAIL is " + user_email + " & I just Registered in LRat with " + platform.platform() + " !\n Time is " + ostime
+                msg = "Hey, My EMAIL is " + user_email + " & I just Registered in Beacon with " + platform.platform() + " !\n Time is " + ostime
 
                 info = open("user-info", "w+")
                 info.write("--] Email : " + user_email)
@@ -79,7 +79,7 @@ def __main__():
                         send_mail(msg)
 
                 print("[ + ] You are Registered!")
-                input("[ + ] Press Any key to Exit. Restart the Program to use LRAT.")
+                input("[ + ] Press Any key to Exit. Restart the Program to use Beacon.")
         
         try:
                 clear_screen()
