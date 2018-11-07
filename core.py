@@ -20,9 +20,9 @@ def __main__():
     def stub():
         print("Lets assume you're Creating a Stub for Educational Purposes only.")
         print("To do this, Just Enter your IP Address in HOST Field in the STUB.")
-        print("-- ] How to USE THE STUB AKA LRAT-Client.")
+        print("-- ] How to USE THE STUB AKA Beacon-Client.")
         print("- Execute Beacon Client.")
-        print("- Enter IP of THIS System which is running LRat Server. (Me)")
+        print("- Enter IP of THIS System which is running Beacon Server. (Me)")
         print("- Press Enter.")
         input("")
         __main__()
