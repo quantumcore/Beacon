@@ -1,19 +1,18 @@
-# LRat-Python
-
-LRat is a really basic Python Program that will help you Learn how Remote Access tools Work.
+# Beacon
+Beacon is a Remote Access tool that teaches you how Remote Access Tools work. (LRat renamed to Beacon)
 
 ## Installation Instructions : 
 ### For Linux : 
 ```
 pip install colorama
-git clone https://github.com/Fahad-M/LRat
-cd LRat
-python3 LRat.py
+git clone https://github.com/Fahad-M/Beacon
+cd Beacon
+python3 Beacon.py
 ```
 ### For Windows : 
 ```
 pip install colorama
-python3 LRat.py
+python3 Beacon.py
 ```
 
 # Prerequisites
