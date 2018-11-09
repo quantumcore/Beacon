@@ -1,4 +1,3 @@
-![Beacon](http://fahadm.co.nf/img/orphicac.png)
 # Beacon
 Beacon is a Remote Access tool that teaches you how Remote Access Tools work. (LRat renamed to Beacon)
 
