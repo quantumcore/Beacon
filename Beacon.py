@@ -7,8 +7,12 @@
 import socket
 import os
 from threading import Thread
+try:
+        import colorama
+except ImportError:
+        os.system("py -m pip install colorama")
+        
 from colorama import Fore, Style
-import colorama
 import platform
 import datetime, smtplib
 import core
